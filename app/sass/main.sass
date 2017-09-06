@@ -54,6 +54,13 @@ a
     color: #bababa
     transition: all .3s ease 0s
 
+.a-text,
+.a-text-cont
+  a
+    color: #7e8082
+    &:hover
+      color: #101010
+
 .text-center
 	text-align: center
 
@@ -62,7 +69,10 @@ a
 	
 .text-left
 	text-align: left
-	
+
+.right
+  float: right
+
 h1, h2, h3, h4, h5
 	color: #171717
 	font-family: $bold-font
@@ -88,6 +98,10 @@ h5
 .big-text
 	font-size: em(18px)
 
+.bold
+  font-weight: 700
+
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -102,6 +116,12 @@ h5
 .pt-100-b-80-cont
   padding-top: 100px
   padding-bottom: 80px
+
+.pb-50
+  padding-bottom: 50px
+
+.pt-80
+  padding-top: 80px
 
 // Footer styles
 .footer-menu
@@ -134,6 +154,54 @@ h5
 .footer-copy
   margin-top: 5px
 
+.widget
+  margin-bottom: 60px
+  h4
+    margin-top: 16px
+    margin-bottom: 21px
+    font-size: 18px
+    font-weight: 700
+  .links-list
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+      padding-bottom: 7px
+  .post-prev-title
+    h3
+      margin: 0
+      font-size: 16px
+      line-height: 26px
+      font-weight: 600
+    a
+      font-size: 14px
+      line-height: 21px
+      font-weight: 400
+      color: #7e8082
+      &:hover
+        color: #101010
+  .post-prev-info
+    text-transform: none
+    line-height: 18px
+    color: #a3a6a8
+    margin-bottom: 14px
+    font-size: 13px
+
+.logo-footer-cont
+  margin-bottom: 50px
+
+.logo-footer
+  max-height: 60px
+
+.footer-2-text-cont
+  margin-bottom: 24px
+  padding-top: 30px
+  border-top: 1px solid #eee
+
+.footer-2-soc-a
+  a
+    font-size: 16px
+    padding: 9px
 
 
 @import "media" // Всегда в конце
