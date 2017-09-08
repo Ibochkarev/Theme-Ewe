@@ -101,7 +101,6 @@ h5
 .bold
   font-weight: 700
 
-
 .img-responsive
 	display: block
 	max-width: 100%
@@ -122,6 +121,11 @@ h5
 
 .pt-80
   padding-top: 80px
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
 
 // Footer styles
 .footer-menu
@@ -159,49 +163,92 @@ h5
   h4
     margin-top: 16px
     margin-bottom: 21px
-    font-size: 18px
-    font-weight: 700
+    font-size: 12px
+    font-weight: 500
+    color: #171717
+    text-transform: uppercase
   .links-list
-    list-style: none
-    margin: 0
-    padding: 0
     li
       padding-bottom: 7px
-  .post-prev-title
-    h3
-      margin: 0
-      font-size: 16px
-      line-height: 26px
-      font-weight: 600
-    a
+      line-height: 30px
+      a
+        color: #878787
+        font-size: 14px
+        font-weight: 400
+  .subscription
+    .subscription_text
+      border: 1px solid #dedede
+      padding: 12px
+      font-family: $light-font
+      color: #878787
       font-size: 14px
-      line-height: 21px
-      font-weight: 400
-      color: #7e8082
+
+.social-list,
+.payment-list
+  li
+    display: inline-block
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
+    .fa
+      font-size: 18px
+      color: #171717
       &:hover
-        color: #101010
-  .post-prev-info
-    text-transform: none
-    line-height: 18px
-    color: #a3a6a8
-    margin-bottom: 14px
-    font-size: 13px
+        color: #878787
 
-.logo-footer-cont
-  margin-bottom: 50px
 
-.logo-footer
-  max-height: 60px
+.footer-copy-wrap
+  border-top: 1px solid #ededed
+  padding-top: 29px
+  .footer-copy
+    a
+      color: #878787
+      font-family: $light-font
+      font-size: 14px
+      line-height: 22px
 
-.footer-2-text-cont
-  margin-bottom: 24px
-  padding-top: 30px
-  border-top: 1px solid #eee
+#footer3
+  .footer-top
+    margin-top: 30px
+    margin-bottom: 30px
+    .footer-menu
+      padding-bottom: 0
+      li
+        display: inline-block
+        a
+          color: #171717
+          font-family: $medium-font
+          font-size: 12px
+          line-height: 48px
+          text-transform: uppercase
+  .footer-bottom
+    border-top: 1px solid #ededed
+    padding-top: 29px
+    .footer-menu
+      li
+        padding-right: 10px
+        a
+          &:hover
+            color: #878787
 
-.footer-2-soc-a
-  a
-    font-size: 16px
-    padding: 9px
-
+#footer4
+  background-color: #171717
+  color: #878787
+  h4
+    color: #ffffff
+    text-transform: uppercase
+  .subscribe-form
+    input
+      margin-right: 15px
+      background: transparent
+      border: 1px solid #3c3c3c
+      padding: 15px
+      width: 138px
+    a.btn
+      background-color: #f95318
+      color: #ffffff
+      padding: 12px 20px
+      text-transform: uppercase
+      font-family: $light-font
 
 @import "media" // Всегда в конце
